@@ -18,7 +18,7 @@ public class RfbEventAttendanceDTO implements Serializable {
 
     private Long rfbEventId;
 
-    private Long rfbuserId;
+    private Long rfbUserId;
 
     public Long getId() {
         return id;
@@ -44,12 +44,12 @@ public class RfbEventAttendanceDTO implements Serializable {
         this.rfbEventId = rfbEventId;
     }
 
-    public Long getRfbuserId() {
-        return rfbuserId;
+    public Long getRfbUserId() {
+        return rfbUserId;
     }
 
-    public void setRfbuserId(Long rfbUserId) {
-        this.rfbuserId = rfbUserId;
+    public void setRfbUserId(Long rfbUserId) {
+        this.rfbUserId = rfbUserId;
     }
 
     @Override

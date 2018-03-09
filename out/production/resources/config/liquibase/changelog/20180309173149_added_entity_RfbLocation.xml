@@ -15,22 +15,18 @@
     <property name="floatType" value="float" dbms="mysql, oracle, mssql"/>
 
     <!--
-        Added the entity RfbEventAttendance.
+        Added the entity RfbLocation.
     -->
-    <changeSet id="20180309173151-1" author="jhipster">
-        <createTable tableName="rfb_event_attendance">
+    <changeSet id="20180309173149-1" author="jhipster">
+        <createTable tableName="rfb_location">
             <column name="id" type="bigint" autoIncrement="${autoIncrement}">
                 <constraints primaryKey="true" nullable="false"/>
             </column>
-            <column name="attendance_date" type="date">
+            <column name="location_name" type="varchar(255)">
                 <constraints nullable="true" />
             </column>
 
-            <column name="rfb_event_id" type="bigint">
-                <constraints nullable="true" />
-            </column>
-
-            <column name="rfb_user_id" type="bigint">
+            <column name="run_day_of_week" type="integer">
                 <constraints nullable="true" />
             </column>
 

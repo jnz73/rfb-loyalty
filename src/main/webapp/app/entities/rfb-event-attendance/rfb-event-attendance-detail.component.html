@@ -14,10 +14,10 @@
                 <a [routerLink]="['/rfb-event', rfbEventAttendance.rfbEventId]">{{rfbEventAttendance.rfbEventId}}</a>
             </div>
         </dd>
-        <dt><span>Rfbuser</span></dt>
+        <dt><span>Rfb User</span></dt>
         <dd>
-            <div *ngIf="rfbEventAttendance.rfbuserId">
-                <a [routerLink]="['/rfb-user', rfbEventAttendance.rfbuserId]">{{rfbEventAttendance.rfbuserId}}</a>
+            <div *ngIf="rfbEventAttendance.rfbUserId">
+                <a [routerLink]="['/rfb-user', rfbEventAttendance.rfbUserId]">{{rfbEventAttendance.rfbUserId}}</a>
             </div>
         </dd>
     </dl>

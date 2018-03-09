@@ -29,9 +29,8 @@ public class RfbEventAttendance implements Serializable {
     @ManyToOne
     private RfbEvent rfbEvent;
 
-    @OneToOne
-    @JoinColumn(unique = true)
-    private RfbUser rfbuser;
+    @ManyToOne
+    private RfbUser rfbUser;
 
     // jhipster-needle-entity-add-field - JHipster will add fields here, do not remove
     public Long getId() {
@@ -68,17 +67,17 @@ public class RfbEventAttendance implements Serializable {
         this.rfbEvent = rfbEvent;
     }
 
-    public RfbUser getRfbuser() {
-        return rfbuser;
+    public RfbUser getRfbUser() {
+        return rfbUser;
     }
 
-    public RfbEventAttendance rfbuser(RfbUser rfbUser) {
-        this.rfbuser = rfbUser;
+    public RfbEventAttendance rfbUser(RfbUser rfbUser) {
+        this.rfbUser = rfbUser;
         return this;
     }
 
-    public void setRfbuser(RfbUser rfbUser) {
-        this.rfbuser = rfbUser;
+    public void setRfbUser(RfbUser rfbUser) {
+        this.rfbUser = rfbUser;
     }
     // jhipster-needle-entity-add-getters-setters - JHipster will add getters and setters here, do not remove
 

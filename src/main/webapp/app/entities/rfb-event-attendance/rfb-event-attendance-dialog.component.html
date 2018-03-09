@@ -31,8 +31,8 @@
             </select>
         </div>
         <div class="form-group">
-            <label class="form-control-label" for="field_rfbuser">Rfbuser</label>
-            <select class="form-control" id="field_rfbuser" name="rfbuser" [(ngModel)]="rfbEventAttendance.rfbuserId">
+            <label class="form-control-label" for="field_rfbUser">Rfb User</label>
+            <select class="form-control" id="field_rfbUser" name="rfbUser" [(ngModel)]="rfbEventAttendance.rfbUserId" >
                 <option [ngValue]="null"></option>
                 <option [ngValue]="rfbUserOption.id" *ngFor="let rfbUserOption of rfbusers; trackBy: trackRfbUserById">{{rfbUserOption.id}}</option>
             </select>
